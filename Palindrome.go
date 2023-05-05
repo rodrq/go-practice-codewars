@@ -4,10 +4,14 @@ such as madam or racecar, the date and time 12/21/33 12:21, and the sentence: "A
 
 package kata
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 func IsPalindrome(s string) bool {
 	runes := []rune(strings.ToLower(s))
+	fmt.Println(runes)
 	length := len(runes)
 
 	for i := 0; i < length/2; i++ {
