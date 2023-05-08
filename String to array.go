@@ -15,3 +15,8 @@ func StringToArray(str string) []string {
 	return strings.Split(str, " ")
 
 }
+
+/* strings.Field separa por whitespace por defecto */
+func StringToArrayBest(str string) []string {
+	return strings.Fields(str)
+}
